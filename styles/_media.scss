@@ -3,6 +3,27 @@
 }
 
 @media screen and (max-width: 600px) {
+    .header-content{
+        .right-header{
+            .btn-con{
+                position: relative;
+                bottom: 0.5rem;
+                right: 20%;
+                padding-top: 1rem;
+                margin-left: auto;
+                padding-bottom: 1rem;
+                padding-left: 22%;
+            }
+        }
+    }
+    .about-container{
+        .right-about{
+            .about-item {
+                width: auto;
+                height: auto;
+            }
+        }
+    }  
     .ami-title{
         margin-top: 2rem;
         margin-bottom: 2rem;
@@ -25,10 +46,6 @@
         top: 1%;
         width: 35px;
         height: 35px;
-    }
-    .btn-con{
-        position: relative;
-        top: -2%;
     }
     .header-content{
         grid-template-columns: repeat(1, 1fr);
@@ -59,8 +76,11 @@
         }
     }
     .header-content .left-header .image{
+        top: 5%;
+        position: relative;
         margin: 0 auto;
         width: 90%;
+        height: 64%;
     }
 
     .controls{
@@ -252,6 +272,15 @@
         padding-right: 0rem;
     }
     .header-content{
+        .left-header{
+            .image{
+                height: 75%;
+            }
+        }
+        .btn-con{
+            margin-left: 36%;
+            padding-top: 3rem;
+        }
         grid-template-columns: repeat(1, 1fr);
         padding-bottom: 6rem;
     }
@@ -261,7 +290,7 @@
             display: none;
         }
         .image{
-            width: 90% !important;
+            width: 80% !important;
             margin: 0 auto !important;
             
         }
@@ -287,7 +316,6 @@
         padding: 7rem 3rem;
     }
     .about-container .right-about{
-        padding-top: 4rem;
         grid-template-columns: repeat(2, 1fr);
     }
 
