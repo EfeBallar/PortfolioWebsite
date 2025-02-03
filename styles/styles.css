@@ -303,6 +303,7 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
+  padding-top: 3rem;
   padding-bottom: 3rem;
 }
 .timeline .timeline-item {
