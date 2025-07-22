@@ -2,197 +2,380 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Efe Ballar</title>
-    <link rel="icon" href="img/efe-ballar-high-resolution-logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="icon" href="img/personal_portfolio.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body class="main-content">
-    <header class="section sec1 header active" id="home">
-        <div class="header-content">
-            <div class="left-header">
-                <div class="h-shape"></div>
-                <div class="image">
-                    <img src="img/efeBallar.jpg" alt="">
-                </div>
-            </div>
-            <div class="right-header">
-                <h1 class="name">
-                    Hi, I'm <span>Efe Ballar.</span><br>
-                    Computer Scientist, BSc.
-                </h1>
-                <!--
-                <div class="btn-con">
-                    <a href ="EfeBallarCV.pdf" class="main-btn" target="_blank">
-                        <span class = "btn-text">Get my CV!</span>
-                        <span class = "btn-icon"><i class="fas fa-download" style="color: white"></i></span>
-                    </a>
-                </div>
-                -->
-            </div>
+<body>
+    <!-- Landing Screen -->
+    <div id="landing-screen" class="landing-screen">
+        <div class="landing-content">
+            <h1 class="landing-text" id="greeting-text">Hey!</h1>
         </div>
-    </header>
-    <main>
-        <section class="section sec2 about" id="about">
-            <div class="main-title"><h2>About <span>me</span></h2></div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase" style="color: white"></i>
-                    </div>
-                    <p class="tl-duration">Jul 2025 - Present</p>
-                    <h5>Cloud Engineer Intern<span> - Commencis</span></h5>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase" style="color: white"></i>
-                    </div>
-                    <p class="tl-duration">Jul 2024 - Jul 2025</p>
-                    <h5>Business Intelligence Engineer Intern<span> - Amazon</span></h5>
-                    <p>
-                        Developed automated data pipelines for Turkey Retail Finance team
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase" style="color: white"></i>
-                    </div>
-                    <p class="tl-duration">Oct 2023 - Jun 2024</p>
-                    <h5>Undergraduate Assistant<span> - Sabanci University</span></h5>
-                    <p>
-                        Introduction to Python & Introduction to C++
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase" style="color: white"></i>
-                    </div>
-                    <p class="tl-duration">Oct 2023 - Jan 2024</p>
-                    <h5>Research Assistant<span> - Sabanci University</span></h5>
-                    <p>
-                        Creating a Database for Turkish Election Trends
-                    </p>
-                </div>
+    </div>
+
+    <!-- Main Portfolio Content -->
+    <div id="main-content" class="main-content">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-brand">
+                <a href="#about">Efe Ballar</a>
             </div>
-        </section>
-        <section class="section sec3 portfolio"  id="portfolio">
-            <div class="main-title">
-                <h2>My <span>Projects</span></h2>
-            </div>
-            <div class="portfolios">
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/LLM-Based-Course-Assistant.png" alt="LLM-Based-Course-Assistant">
-                    </div>
-                    <div class="hover-items">
-                        <h3>LLM-Based Course Assistant</h3>
-                        <div class="icons">
-                            <a href="https://github.com/EfeBallar/GraduationProject" class="icon" target="_blank">
-                                <i class="fab fa-github"></i>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-photo">
+                        <!--
+                        <div class="resume-button-container">
+                            <a href="EfeBallar_CV.pdf" class="btn btn-primary resume-btn" target="_blank">
+                                <i class="fas fa-download"></i>
+                                My Resume
                             </a>
                         </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/Flight-roster-project.png" alt="Flight Roster Project">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Airline Manager</h3>
-                        <div class="icons">
-                            <a href="https://github.com/EfeBallar/CS308-Project" class="icon" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
+                        -->
+                        <img src="img/efeBallar.jpg" alt="Efe" class="profile-image">
+                        <div class="fun-facts">
+                            <div class="fun-fact active">
+                                <i class="fas fa-chess"></i>
+                                <span>Chess</span>
+                            </div>
+                            <div class="fun-fact">
+                                <i class="fas fa-music"></i>
+                                <span>Drums</span>
+                            </div>
+                            <div class="fun-fact">
+                                <i class="fas fa-bicycle"></i>
+                                <span>Cycling</span>
+                            </div>
+                        </div>
+                        <!-- Education Section -->
+                        
+                        <div class="about-education">
+                            <h3>Education</h3>
+                            <!--
+                            <div class="education-item">
+                                <h4>MEng, Computer Science</h4>
+                                <p class="education-school">KU Leuven</p>
+                                <span class="education-period">2025 - Present</span>
+                            </div>
+                            -->
+                            <div class="education-item">
+                                <h4>BSc, Computer Science and Engineering</h4>
+                                <p class="education-school">Sabancı University</p>
+                                <span class="education-period">2021 - 2025</span>
+                                <p class="education-details">GPA: 3.85/4</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/study-buddy-high-resolution-logo.png" alt="Study Buddy App">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Study Buddy App</h3>
-                        <div class="icons">
-                            <a href="https://github.com/EfeBallar/CS310_Mobile_Application" class="icon" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
+                    <div class="about-text">
+                        <p>I'm a hard-working engineer who loves the challenge of solving complex problems.</p>
+                        <div class="timeline">
+                            <div class="timeline-item" data-year="2025">
+                                <div class="timeline-content">
+                                    <h4>Cloud Engineer Intern @ Commencis</h4>
+                                    <!--
+                                    <p>Implemented and deployed scalable Python and Go microservices on AWS infrastructure, streamlining data 
+                                        processing workflows and decreasing API response times for data operations.</p> -->
+                                </div>
+                            </div>
+                            <div class="timeline-item" data-year="2024">
+                                <div class="timeline-content">
+                                    <h4>Business Intelligence Engineer Intern @ Amazon</h4>
+                                    <p>Engineered automated data pipelines utilizing ETL tools, and enhanced decision-making efficiency across the
+                                        Finance team by optimizing crucial SQL queries in Redshift clusters. 
+                                        <br>
+                                        Designed and deployed dynamic financial dashboards and reporting systems in Quicksight and Excel, decreasing
+                                        manual report generation times and enabling real-time insights for strategic planning. 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline-item" data-year="2023">
+                                <div class="timeline-content">
+                                    <h4>Undergraduate Assistant @ Sabancı University</h4>
+                                    <p>Facilitated student recitations and office hours while developing supplementary materials, supporting academic 
+                                        success for over 1000 students and driving an improvement in assignment grades in both Python and C++ courses.</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/disucord-high-resolution-logo.png" alt="DiSUcord">
-                    </div>
-                    <div class="hover-items">
-                        <h3>DiSUcord</h3>
-                        <div class="icons">
-                            <a href="https://github.com/EfeBallar/CS408-DiSUcord" class="icon" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/cs210.png" alt="Analyzing the Grand Assembly of Turkey">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Analyzing the History of <br> Grand Assembly of Turkey</h3>
-                        <div class="icons">
-                            <a href="https://github.com/EfeBallar/CS210-Project" class="icon" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/efe-ballar-high-resolution-logo.png" alt="Personal Website">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Personal Portfolio Website</h3>
-                        <div class="icons">
-                            <a href="https://github.com/EfeBallar/PortfolioWebPage" class="icon" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/kayak-flight-scraper.png" alt="Kayak Flight Scraper">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Kayak Flight Scraper</h3>
-                        <div class="icons">
-                            <a href="https://github.com/EfeBallar/kayak-flight-scraper" class="icon" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
+
+                        <!-- Certifications Section -->
+                        <div class="about-certifications">
+                            <h3>Certifications</h3>
+                            <div class="certifications">
+                                <span class="cert-badge">AWS Cloud Practitioner</span>
+                                <span class="cert-badge">Nvidia Fundamentals of Deep Learning</span>
+                                <span class="cert-badge">TOEFL iBT - Total Score 107/120</span>
+                                <span class="cert-badge">GRE - Quantitative Score 170/170</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
-    <div class="controls">
-        <div class="control control-1 active-btn" data-id="home" id="c1" >
-            <i class="fas fa-home"></i>
-        </div>
-        <div class="control control-2" data-id="about" id="c2">
-            <i class="fas fa-user"></i>
-        </div>
-        <div class="control control-3" data-id="portfolio" id="c3">
-            <i class="fas fa-briefcase"></i>
-        </div>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <div class="skill-icons">
+                            <div class="skill-item">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-java"></i>
+                                <span>Java</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-cuttlefish"></i>
+                                <span>C/C++</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-microsoft"></i>
+                                <span>C#</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-database"></i>
+                                <span>SQL</span>
+                            </div> 
+                            <div class="skill-item">
+                                <i class="fab fa-r-project"></i>
+                                <span>R</span>
+                            </div> 
+                            <div class="skill-item">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-js-square"></i>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Frameworks/Libraries</h3>
+                        <div class="skill-icons">
+                            <div class="skill-item">
+                                <i class="fab fa-node-js"></i>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-react"></i>
+                                <span>React</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-network-wired"></i>
+                                <span>FASTAPI</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-table"></i>
+                                <span>Pandas</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-superscript"></i>
+                                <span>NumPy</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-robot"></i>
+                                <span>Selenium</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-brain"></i>
+                                <span>Scikit-learn</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-gear"></i>
+                                <span>Tensorflow</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-link"></i>
+                                <span>Langchain</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>DevOps</h3>
+                        <div class="skill-icons">
+                            <div class="skill-item">
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-docker"></i>
+                                <span>Docker</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-aws"></i>
+                                <span>AWS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/LLM-Based-Course-Assistant.png" alt="Project 1">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/EfeBallar/LLM-Based-Course-Assistant" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>LLM-based Course Assistant</h3>
+                            <p>Developed an LLM-powered course assistant using a Retrieval-Augmented Generation model, enabling students to query lecture materials.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Flask</span>
+                                <span class="tech-tag">LangChain</span>
+                                <span class="tech-tag">Ollama</span>
+                                <span class="tech-tag">FAISS</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">React</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/Flight-roster-project.png" alt="Project 2">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/EfeBallar/CS308-Project" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Airline Manager</h3>
+                            <p>Designed and developed a comprehensive application for managing flight rosters, including features for scheduling, tracking, and ticketing.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Jest</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/study-buddy-high-resolution-logo.png" alt="Project 3">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/EfeBallar/CS310_Mobile_Application" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Study Buddy App</h3>
+                            <p>Designed and developed a comprehensive application for students with intuitive course filtering, session creation, and commenting features.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Java SpringBoot</span>
+                                <span class="tech-tag">Android</span>
+                                <span class="tech-tag">Docker</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/analysis_history.png" alt="Project 4">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/EfeBallar/CS210-Project" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Analysis of Turkey's Grand Assembly History</h3>
+                            <p>Scraped over 3K+ records of parliamentary data, performed exploratory data analysis and built predictive models to understand legislative trends.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">BeautifulSoup</span>
+                                <span class="tech-tag">Selenium</span>
+                                <span class="tech-tag">Scikit-learn</span>
+                                <span class="tech-tag">Pandas</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/disucord-high-resolution-logo.png" alt="Project 5">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/EfeBallar/CS408-DiSUcord" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>DiSUcord</h3>
+                            <p>University message networking application with a server-client architecture.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">C#</span>
+                                <span class="tech-tag">TCP/IP</span>
+                                <span class="tech-tag">Windows Forms</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/kayak-flight-scraper.png" alt="Project 6">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/EfeBallar/kayak-flight-scraper" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Kayak Flight Scraper</h3>
+                            <p>A web scraper for extracting flight information from Kayak, can also be used to track flight prices between nearby airports.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Selenium</span>
+                                <span class="tech-tag">BeautifulSoup</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-social">
+                    <a href="https://github.com/EfeBallar" class="social-link" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/efeballar/" class="social-link" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <p>&copy; Efe Ballar. All rights reserved.</p>
+            </div>
+        </footer>
     </div>
-    <div class="theme-btn">
-        <i class="fas fa-adjust"></i>
-    </div>
-    <script src="app.js" ></script>
+
+    <script src="app.js"></script>
 </body>
 </html>
