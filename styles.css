@@ -377,6 +377,11 @@ section {
     padding-bottom: 0.5rem;
 }
 
+/* Add spacing between education cards */
+.about-education .education-item:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
 .education-item {
     padding: 1rem;
     background: #f8fafc;
