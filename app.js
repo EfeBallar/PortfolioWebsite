@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'Hola!',      // Spanish
         'Bonjour!',   // French
         'Hallo!',     // German
-        'Hoi!',       // Dutch
+        'Dag!',       // Dutch
         'Merhaba!',   // Turkish
     ];
     
