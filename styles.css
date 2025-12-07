@@ -108,7 +108,7 @@ body {
 }
 
 .nav-brand a:hover {
-    color: #6366f1;
+    color: #000;
 }
 
 .nav-links {
@@ -125,7 +125,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #6366f1;
+    color: #000;
 }
 
 @keyframes float {
@@ -196,12 +196,12 @@ body {
 }
 
 .btn-primary {
-    background: #6366f1;
+    background: #000;
     color: white;
 }
 
 .btn-primary:hover {
-    background: #5855eb;
+    background: #333;
     transform: translateY(-2px);
 }
 
@@ -213,7 +213,7 @@ body {
 
 .btn-secondary:hover {
     background: white;
-    color: #6366f1;
+    color: #000;
 }
 
 /* Section Styles */
@@ -282,14 +282,12 @@ section {
     background: white;
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    opacity: 0.7;
     transition: all 0.3s ease;
     font-size: 0.85rem;
     white-space: nowrap;
 }
 
-.fun-fact.active {
-    opacity: 1;
+.fun-fact:hover {
     transform: scale(1.05);
 }
 
@@ -316,7 +314,7 @@ section {
     top: 0;
     bottom: 0;
     width: 2px;
-    background: #6366f1;
+    background: #000;
 }
 
 .timeline-item {
@@ -332,7 +330,7 @@ section {
     top: 0;
     width: 70px;
     height: 30px;
-    background: #6366f1;
+    background: #000;
     color: white;
     border-radius: 15px;
     display: flex;
@@ -360,7 +358,7 @@ section {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
     color: #333;
-    border-bottom: 2px solid #6366f1;
+    border-bottom: 2px solid #000;
     padding-bottom: 0.5rem;
 }
 
@@ -373,7 +371,7 @@ section {
     font-size: 1.3rem;
     margin-bottom: 1rem;
     color: #333;
-    border-bottom: 2px solid #6366f1;
+    border-bottom: 2px solid #000;
     padding-bottom: 0.5rem;
 }
 
@@ -402,7 +400,7 @@ section {
 }
 
 .education-period {
-    color: #6366f1;
+    color: #000;
     font-weight: 500;
     font-size: 0.9rem;
 }
@@ -426,7 +424,7 @@ section {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
     color: #333;
-    border-bottom: 2px solid #6366f1;
+    border-bottom: 2px solid #000;
     padding-bottom: 0.5rem;
 }
 
@@ -472,7 +470,7 @@ section {
 .skill-item i {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
-    color: #6366f1;
+    color: #000;
 }
 
 .skill-item span {
@@ -527,7 +525,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(99, 102, 241, 0.9);
+    background: rgba(0, 0, 0, 0.85);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -552,7 +550,7 @@ section {
     height: 50px;
     background: white;
     border-radius: 50%;
-    color: #6366f1;
+    color: #000;
     text-decoration: none;
     transition: transform 0.3s ease;
 }
@@ -584,8 +582,8 @@ section {
 
 .tech-tag {
     padding: 0.3rem 0.8rem;
-    background: #e0e7ff;
-    color: #6366f1;
+    background: #e5e5e5;
+    color: #000;
     border-radius: 20px;
     font-size: 0.8rem;
     font-weight: 500;
@@ -622,7 +620,7 @@ section {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
     color: #333;
-    border-bottom: 2px solid #6366f1;
+    border-bottom: 2px solid #000;
     padding-bottom: 0.5rem;
 }
 
@@ -643,7 +641,7 @@ section {
 }
 
 .education-period {
-    color: #6366f1;
+    color: #000;
     font-weight: 500;
 }
 
@@ -655,7 +653,7 @@ section {
 
 .cert-badge {
     padding: 0.5rem 1rem;
-    background: #6366f1;
+    background: #000;
     color: white;
     border-radius: 25px;
     font-size: 0.9rem;
@@ -810,10 +808,10 @@ section {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #6366f1;
+    background: #333;
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #5855eb;
+    background: #000;
 }
